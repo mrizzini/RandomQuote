@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta content="width=device-width, initial-scale=1.0" name="viewport">
+	<meta content="ie=edge" http-equiv="X-UA-Compatible">
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js">
+	</script>
+	<link href="randomQuote.css" rel="stylesheet">
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" rel="stylesheet">
+	<title>Random Quote Generator</title>
+</head>
+<body style="margin: 0;">
+	<img class="absolute" id="bgimg" src="https://www.walldevil.com/wallpapers/a43/landscapes-gorgeous-truck-westeros-background-food-thrones-kingslanding-images-check-photos-game.jpg">
+	<div class="quote-box container-fluid">
+		<p id="quoteInsert">Welcome to the GOT Quote Generator. Click the button below for a random GOT quote to be displayed here!</p>
+		<p id="authorInsert"></p>
+			<button class="twitter" onclick="quoteInfo.tweet()" title="Click to tweet"><i class="fa fa-twitter fa_custom"></i> Share on Twitter</button> 
+			<button class="btn btn-danger quote" onclick="quoteInfo.generateQuote()" type="quote">New Quote</button>
+	</div>
+	<script src="randomQuote.js"></script> 
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+</body>
+</html>
