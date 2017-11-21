@@ -11,5 +11,13 @@ var quoteInfo = {
 	tweet: function() {
 		window.open('https://twitter.com/intent/tweet?hashtags=SiliconRhode&related=&text=' + document.getElementById("quoteInsert").textContent + " " + document.getElementById("authorInsert").textContent + ".");
 	}
-}
+};
 
+document.getElementById('quoteBtn').onclick = function () {
+	quoteInfo.generateQuote();
+};
+
+
+document.getElementById('twitterBtn').onclick = function () {
+	quoteInfo.tweet();
+};
